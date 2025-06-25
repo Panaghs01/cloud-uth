@@ -3,7 +3,7 @@ deploy:
 	@echo "🚀 Deploying Kubernetes PostgreSQL + Web Server setup..."
 	kubectl apply -f 01-secret.yaml
 	kubectl apply -f 02-configmap.yaml
-	kubectl apply -f 07-init-sql.yaml
+	kubectl apply -f 07-init-sql-configmap.yaml
 	kubectl apply -f 03-pvc.yaml
 	kubectl apply -f 04-postgres.yaml
 	kubectl apply -f 05-postgres-service.yaml
